@@ -576,7 +576,7 @@
                                                         width="100%">
                                                         <tr>
                                                             <td class="pad">
-                                                                <div align="center"
+                                                                <div allign="center"
                                                                     style="font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;text-align:center;">
                                                                     <style>
                                                                         /* Apply left alignment to the table */
@@ -617,14 +617,21 @@
                                                                             }
 
                                                                             .section-table td {
-                                                                                display: block;
+                                                                                display: 0;
                                                                                 /* Make table cells stack on top of each other */
-                                                                                border: none;
+                                                                                /*border: none;
                                                                                 /* Remove cell borders for better display on small screens */
+                                                                            }
+
+                                                                            .table-container {
+                                                                                margin-right: 26px;
+                                                                                margin-left: 26px;
+                                                                                /* margin for mobile*/
                                                                             }
                                                                         }
                                                                     </style>
-                                                                    <div class="table-container section-table">
+                                                                    <div class="table-container section-table"
+                                                                        style="overflow-x: auto;">
                                                                         <table>
                                                                             <tbody>
                                                                                 <tr>
@@ -653,6 +660,7 @@
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
+                                                                        <!--masukkan tabel html-->
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -1124,7 +1132,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="column column-1"
-                                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: left; font-weight: 400; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
+                                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; font-weight: 400; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
                                                     width="33.333333333333336%">
                                                     <div class="spacer_block block-1"
                                                         style="height:20px;line-height:20px;font-size:1px;"> </div>
@@ -1134,21 +1142,23 @@
                                                         width="100%">
                                                         <tr>
                                                             <td class="pad"
-                                                                style="padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:20px;">
+                                                                style="padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; text-align: center;">
                                                                 <div style="font-family: sans-serif">
-                                                                    <div class=""
+                                                                    <div class="title our journey mobile_hide"
                                                                         style="font-size: 14px; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 21px; color: #393d47; line-height: 1.5;">
                                                                         <p
-                                                                            style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 51px;">
+                                                                            style="margin: 0; font-size: 14px; mso-line-height-alt: 51px;">
                                                                             <span
-                                                                                style="font-size:34px;color:#30a57a;"><strong>Our</strong></span>
-                                                                        </p>
-                                                                        <p
-                                                                            style="margin: 0; font-size: 14px; text-align: center; mso-line-height-alt: 51px;">
-                                                                            <span
-                                                                                style="font-size:34px;color:#30a57a;"><strong>Journey</strong></span>
+                                                                                style="font-size: 34px; color: #30a57a;"><strong>Our<br>Journey</strong></span>
                                                                         </p>
                                                                     </div>
+                                                                </div>
+                                                                <div align="center" class="alignment"
+                                                                    style="font-size: 14px; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 21px; color: #393d47; line-height: 1.5;">
+                                                                    <p class="Our Journey desktop_hide"
+                                                                        style="margin: auto; font-size: 14px; font-size: 34px; color: #30a57a; mso-line-height-alt: 51px;">
+                                                                        <strong>Our Journey</strong>
+                                                                    </p>
                                                                 </div>
                                                             </td>
                                                         </tr>
