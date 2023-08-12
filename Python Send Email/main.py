@@ -6,7 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
 
 # Read email
-df = pd.read_csv("Python Send Email\Data Email\data buyer until 25 feb.csv")
+df = pd.read_csv(
+    "D:\\02_Projects\\Kasyapi\\email-KASYAPI\\Python Send Email\\Data Email\\data buyer until 25 feb.csv"
+)
 email_kirim = []
 for email in df["Email"]:
     email_kirim.append(email)
@@ -17,7 +19,11 @@ load_dotenv()
 password = os.getenv("PASSWORD")
 
 # Create the plain-text and HTML version of your message
-html = open("email_pinang-fix.html", "r", encoding="utf-8").read()
+html = open(
+    "D:\\02_Projects\\Kasyapi\\email-KASYAPI\\Python Send Email\\Isi Email\\email_pinang-fix.html",
+    "r",
+    encoding="utf-8",
+).read()
 
 # Create secure connection with server and send email
 context = ssl.create_default_context()
