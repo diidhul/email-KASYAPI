@@ -33,7 +33,9 @@ with smtplib.SMTP_SSL("mail.kasyapi.com", 465, context=context) as server:
     for receiver in email_kirim:
         # Create a new MIMEMultipart message for each receiver
         message_individual = MIMEMultipart("alternative")
-        message_individual["Subject"] = "Test_V.1.0.3"
+        message_individual[
+            "Subject"
+        ] = "Premium Betel Nut Export Offer: Top Quality from PT Kasyapi Akbar Nusantara"
         message_individual["From"] = sender_email
         message_individual["To"] = receiver
 
